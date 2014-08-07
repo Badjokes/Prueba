@@ -2,7 +2,7 @@ package ejemplo12.vista;
 
 import java.awt.Container;
 import java.awt.Dimension;
-import java.awt.FlowLayout;
+import java.awt.GridLayout;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 
@@ -19,7 +19,7 @@ public class VentanaAplicacion extends JFrame{
     
     private void ajustarComponentes(Container c){
        //1. Ajusta el administrador de disposicion(Layout manager)
-        c.setLayout(new FlowLayout());
+        c.setLayout(new GridLayout(3,3,16,16));
         
         //2. Coloca los componentes en el contenedor
         c.add(new JButton("Boton 1"));
